@@ -40,3 +40,17 @@ step12 : npm i mongoose.
 ste 13: go to mogodb website create the database and copy the link paste it i the index.js file (password Pooja or my main password     )
 step 14: creation of user modules . for that need define certain rules creation of rules using mongoose.
 step 15: Creation of test API route
+step 16: to establish the connection to mongodb databases { written in Node.js using the Mongoose library to establish a connection to a MongoDB database and log a message once the connection is successfully opened}
+
+The code import userRouter from "./API/routes/user.route.js"; and the URL path /API/User serve different purposes and are used in different contexts in a Node.js application.
+
+import userRouter from "./API/routes/user.route.js";:
+
+This line is an ES6 module import statement. It is used to import the userRouter object from the specified module file located at "./API/routes/user.route.js". The imported userRouter object is expected to be an Express Router that contains route definitions and request handlers. This code is used in your Node.js application to load and use the userRouter for routing HTTP requests.
+/API/User (URL path):
+
+/API/User is a URL path or route that clients (e.g., web browsers or other applications) use to make HTTP requests to your server. It represents a specific endpoint or route on your server that is used to access resources or perform actions related to user-related operations.
+
+. (single dot): Refers to the current directory.
+.. (double dot): Refers to the parent directory.
+step 17: controller folder where all routes are separetly specified.
