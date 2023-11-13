@@ -54,3 +54,7 @@ This line is an ES6 module import statement. It is used to import the userRouter
 . (single dot): Refers to the current directory.
 .. (double dot): Refers to the parent directory.
 step 17: controller folder where all routes are separetly specified.
+step18: creation signup api route
+ hence at starting stage we dont have form so used of API testing software.
+ step 19: hence at this not created any signup form so to test the connectivity to the database install insomia to test the database connetivity.
+ step 20 : In teh database instALL npm i bcryptjs
