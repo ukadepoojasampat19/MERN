@@ -59,3 +59,4 @@ step18: creation signup api route
  step 19: hence at this not created any signup form so to test the connectivity to the database install insomia to test the database connetivity.
  step 20 : In teh database instALL npm i bcryptjs.
  step 21: creation of middleware function to handle the error 
+ step 22: creationn of signup page UI
