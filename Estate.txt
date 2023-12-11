@@ -27,7 +27,7 @@ Add the Tailwind directives to your CSS(./src/index.css).
 step1: router connectivity.
 step2: header section build .
 step3: install react icon .
-step4: backend develeopment i.e signin and signout page.
+step4: backend develeopment i.e signin and signup page.
 step5: when we deploted our project the render will check in the root of the project.package.json should be inside
 the root.
 step6: initilize package.json(npm init -y).
@@ -60,3 +60,4 @@ step18: creation signup api route
  step 20 : In teh database instALL npm i bcryptjs.
  step 21: creation of middleware function to handle the error 
  step 22: creationn of signup page UI
+ step 23:creation signup UI functionality.
