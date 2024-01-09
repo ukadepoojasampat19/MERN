@@ -12,9 +12,8 @@ export default function Signup() {
       [e.target.id]: e.target.value,
     });
   };
-  const handleSubmit = async (e) => {
+ 
    
-    e.preventDefault();/* prevent refreshing while submitting the data  */
     const handleSubmit = async (e) => {
       e.preventDefault(); /* prevent refreshing while submitting the data */
       try {
@@ -28,7 +27,7 @@ export default function Signup() {
         });
     
         const data = await res.json();
-    
+        
         if (data.success === false) {
           setLoading(false);
           // Handle the case when signup is unsuccessful
@@ -39,15 +38,15 @@ export default function Signup() {
         // Handle successful signup
         setLoading(false);
         setError(null);
-        navigate('/sign-in');
+        navigate('/signin');
       } catch (error) {
         // Handle other errors (e.g., network issues)
         setLoading(false);
         setError(error.message);
-      }
+      } 
     };
     
-  }
+  
   console.log(formData);
   return (
     <div className="p-3 max-w-lg mx-auto">
