@@ -18,7 +18,7 @@ export default function Signup() {
       e.preventDefault(); /* prevent refreshing while submitting the data */
       try {
         setLoading(true);
-        const res = await fetch("/API/auth/signup", {
+        const res = await fetch("localhost:3000/API/auth/signup", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ export default function Signup() {
         // Handle successful signup
         setLoading(false);
         setError(null);
-        navigate('/signin');
+        navigate('/sign-in');
       } catch (error) {
         // Handle other errors (e.g., network issues)
         setLoading(false);

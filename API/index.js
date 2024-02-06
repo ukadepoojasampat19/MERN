@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import cors from 'cors'
 import dotenv from "dotenv";
 
 import userRouter from "./routes/user_route.js";
@@ -18,7 +19,7 @@ db.once("open", () => console.log("connected to database"));
 const app = express();
 
 app.use(express.json()); /*allow json as the input to our backend */
-
+app.use(cors());
 app.listen(3000, () =>
 {
   console.log("Server is running on the port 3000");
