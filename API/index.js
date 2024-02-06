@@ -20,7 +20,8 @@ const app = express();
 
 app.use(express.json()); /*allow json as the input to our backend */
 app.use(cors());
-app.listen(3000, () =>
+let port = process.env.PORT || 3000;
+app.listen(port, () =>
 {
   console.log("Server is running on the port 3000");
 }
